@@ -1,0 +1,19 @@
+.footer-contact {
+  &__item {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71; /*24px*/
+    letter-spacing: 0.03em;
+    font-style: normal;
+    list-style: none;
+  }
+
+  &__item + &__item {
+    margin-top: 9px;
+  }
+
+  &__address {
+    color: #ffffff;
+    font-style: normal;
+  }
+}

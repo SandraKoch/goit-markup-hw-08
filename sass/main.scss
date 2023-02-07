@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import "./utils/vars";
+@import "./components/main-page/main-page-components.scss";
+@import "./components/portfolio/portfolio-components.scss";
+@import "./components/shared/shared-components.scss";
+
+body {
+  color: var(--primary-color);
+  font-family: var(--main-font-family);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

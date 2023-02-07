@@ -1,0 +1,31 @@
+.our-assets {
+  display: flex;
+}
+
+.asset {
+  list-style: none;
+
+  &__icon-wrapper {
+    background-color: var(--grey-backgroud-color);
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14; /*16px*/
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.71; /*24px*/
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+    margin-top: 10px;
+  }
+}

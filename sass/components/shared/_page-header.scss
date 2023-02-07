@@ -1,0 +1,14 @@
+.page-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14; /*16px*/
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+  }
+}
