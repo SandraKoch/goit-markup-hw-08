@@ -4,7 +4,16 @@
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  min-width: 320px;
+  max-width: 480px;
   margin: 0 auto;
   justify-content: center;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+  }
 }
