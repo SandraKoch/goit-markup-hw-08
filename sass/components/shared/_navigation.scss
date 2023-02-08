@@ -1,8 +1,12 @@
 .navigation {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+
   &__list {
     display: flex;
     justify-content: space-between;
-    width: 254px;
     margin-left: 93px;
     padding: 0;
   }
@@ -28,6 +32,7 @@
   &__item {
     list-style: none;
     position: relative;
+    margin-right: 46px;
 
     &:hover,
     &:focus,
