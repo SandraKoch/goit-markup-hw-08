@@ -6,8 +6,9 @@
       rgba(47, 48, 58, 0.4) 0%,
       rgba(47, 48, 58, 0.4) 50%
     ),
-    url(https://github.com/SandraKoch/goit-markup-hw-04/blob/main/images/background-image.jpg?raw=true);
-  // max-width: 1600px;
+    url(https://github.com/SandraKoch/goit-markup-hw-08/blob/main/images/mobile-hero-img-1x.jpg?raw=true);
+  max-width: 480px;
+  max-height: 400px;
   background-size: cover;
   background-position-x: 50%;
   margin: auto;
@@ -15,7 +16,12 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url("photo@2x.png");
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 50%
+      ),
+      url(https://github.com/SandraKoch/goit-markup-hw-08/blob/main/images/mobile-hero-img-2x.jpg?raw=true);
   }
 
   @media screen and (min-width: 1200px) {
@@ -26,6 +32,7 @@
       ),
       url(https://github.com/SandraKoch/goit-markup-hw-04/blob/main/images/background-image.jpg?raw=true);
     max-width: 1600px;
+    max-height: 100%;
   }
 
   &__container {
@@ -35,15 +42,21 @@
   }
 
   &__headline {
+    font-size: 26px;
+    line-height: 1.62; /*42px*/
     text-transform: uppercase;
-    font-size: 44px;
-    line-height: 1.36; /*60px*/
     text-align: center;
     letter-spacing: 0.06em;
     color: #ffffff;
     font-weight: 900;
-    padding-top: 106px;
+    padding-top: 10px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36; /*60px*/
+      padding-top: 106px;
+    }
   }
 
   &__button {

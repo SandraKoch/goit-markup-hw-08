@@ -11,9 +11,14 @@
   &__icon-wrapper {
     background-color: var(--grey-backgroud-color);
     border-radius: 4px;
-    max-width: 270px;
     max-height: 120px;
     padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
+    }
   }
 
   &__name {
@@ -22,6 +27,11 @@
     line-height: 1.14; /*16px*/
     letter-spacing: 0.03em;
     margin-top: 30px;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 
   &__description {
@@ -31,5 +41,15 @@
     color: var(--secondary-color);
     margin-top: 10px;
     text-align: left;
+
+    & {
+      margin-bottom: 30px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    // last child shouldn't have margin-bottom, but the feature doesn't work here
   }
 }

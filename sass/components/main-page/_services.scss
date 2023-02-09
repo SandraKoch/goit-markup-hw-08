@@ -1,12 +1,16 @@
 .services {
-  padding-top: 94px;
+  display: none;
 
-  &__headline {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17; /*42px*/
-    text-align: center;
-    letter-spacing: 0.03em;
-    padding-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+
+    &__headline {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17; /*42px*/
+      text-align: center;
+      letter-spacing: 0.03em;
+      padding-bottom: 50px;
+    }
   }
 }
