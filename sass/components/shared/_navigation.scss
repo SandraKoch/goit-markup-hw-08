@@ -1,5 +1,11 @@
 .navigation {
   display: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14; /*16px*/
+  letter-spacing: 0.02em;
+
   @media (min-width: 768px) {
     display: block;
   }
@@ -8,14 +14,6 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
-
-    @media screen and (min-width: 768px) {
-      margin-left: 83px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      margin-left: 93px;
-    }
   }
 
   &__link {
@@ -31,7 +29,11 @@
         display: flex;
         border-radius: 3px;
         position: relative;
-        top: 31px;
+        top: 30px;
+
+        @media screen and (min-width: 1200px) {
+          top: 31px;
+        }
       }
     }
   }
