@@ -95,8 +95,8 @@
 
   &__checkbox-label {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
     position: relative;
@@ -105,6 +105,11 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 2;
+    }
 
     /* custom made styles for checkbox */
 
