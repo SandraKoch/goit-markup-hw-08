@@ -1,11 +1,13 @@
 .nav-contact {
   display: none;
+
   @media (min-width: 768px) {
     display: flex;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.17; /*14px*/
     letter-spacing: 0.02em;
+    color: var(--secondary-color);
     margin-left: auto;
     flex-direction: column;
   }
