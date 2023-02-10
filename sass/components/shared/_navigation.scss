@@ -7,8 +7,15 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    margin-left: 93px;
     padding: 0;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 83px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+    }
   }
 
   &__link {
