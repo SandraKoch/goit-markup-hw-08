@@ -35,7 +35,7 @@
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-            <svg class="mobile-menu__icon" width="40" height="40">
+            <svg class="mobile-menu-icon" width="40" height="40">
               <use href="./images/icons.svg#icon-menu_40px"></use>
             </svg>
           </button>
@@ -680,40 +680,43 @@
 
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg class="mobile-menu__icon" width="40" height="40">
+        <svg class="mobile-menu-icon" width="40" height="40">
           <use href="./images/icons.svg#icon-close_40px"></use>
         </svg>
       </button>
+      <div class="mobile-wrapper">
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a
+              class="mobile-menu__link mobile-menu__link--active"
+              href="./index.html"
+              >Agencja</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="">Kontakt</a>
+          </li>
+        </ul>
 
-      <ul class="mobile-menu">
-        <li class="mobile-menu__item">
-          <a
-            class="mobile-menu__link mobile-menu__link--active"
-            href="./index.html"
-            >Agencja</a
-          >
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="./portfolio.html">Portfolio</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="">Kontakt</a>
-        </li>
-      </ul>
-
-      <ul class="mobile-contact">
-        <li class="mobile-contact__tel">
-          <a class="link mobile-contact__link" href="tel:+48111111111">
-            <span>+48 111 111 111</span>
-          </a>
-        </li>
-        <li class="mobile-contact__element">
-          <a class="link mobile-contact__mail" href="mailto:info@devstudio.com">
-            <span>info@devstudio.com</span>
-          </a>
-        </li>
-      </ul>
-
+        <ul class="mobile-contact">
+          <li class="mobile-contact__tel">
+            <a class="link mobile-contact__link" href="tel:+48111111111">
+              <span>+48 111 111 111</span>
+            </a>
+          </li>
+          <li class="mobile-contact__element">
+            <a
+              class="link mobile-contact__mail"
+              href="mailto:info@devstudio.com"
+            >
+              <span>info@devstudio.com</span>
+            </a>
+          </li>
+        </ul>
+      </div>
       <!-- mobile socials  -->
 
       <ul class="mobile-social">
