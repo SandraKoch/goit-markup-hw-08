@@ -3,12 +3,19 @@
   display: flex;
   justify-content: space-between;
 
+  @media screen and (min-width: 320px) and (max-width: 403px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 404px) {
+    flex-wrap: nowrap;
+  }
+
   &__element {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22; /*22px*/
     letter-spacing: 0.02em;
-    padding-right: 10px;
 
     &:not(:first-child) {
       padding-left: 10px;
@@ -16,6 +23,18 @@
 
     &:not(:last-child) {
       border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 403px) {
+      padding-right: 3px;
+
+      &:not(:first-child) {
+        padding-left: 3px;
+      }
+    }
+
+    @media screen and (min-width: 404px) {
+      padding-right: 10px;
     }
   }
 
