@@ -31,6 +31,10 @@
     justify-content: center;
     flex-basis: calc((100% - 30px) / 2);
 
+    @media screen and (min-width: 320px) and (max-width: 403px) {
+      flex-basis: calc((100% - 0px) / 1);
+    }
+
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 60px) / 3);
     }
