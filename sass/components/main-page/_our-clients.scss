@@ -12,7 +12,6 @@
     list-style-type: none;
     display: flex;
     align-items: center;
-
     flex-wrap: wrap;
     gap: 30px;
   }
@@ -22,8 +21,6 @@
     align-items: center;
     justify-content: center;
     flex-basis: calc((100% - 30px) / 2);
-    border: 1px solid var(--icons-color);
-    border-radius: 4px;
 
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 60px) / 3);
@@ -38,6 +35,12 @@
     height: 92px;
     padding: 16px 32px;
     fill: var(--icons-color);
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:hover,
     &:focus,
