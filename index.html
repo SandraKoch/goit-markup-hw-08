@@ -35,18 +35,8 @@
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-            <svg
-              width="24"
-              height="24"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
+            <svg class="mobile-menu__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu_40px"></use>
             </svg>
           </button>
         </div>
@@ -686,28 +676,67 @@
       </div>
     </footer>
 
+    <!-- mobile menu html  -->
+
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+        <svg class="mobile-menu__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-close_40px"></use>
         </svg>
       </button>
 
       <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
+        <li class="mobile-menu__item">
+          <a
+            class="mobile-menu__link mobile-menu__link--active"
+            href="./index.html"
+            >Agencja</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="">Kontakt</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contact">
+        <li class="mobile-contact__tel">
+          <a class="link mobile-contact__link" href="tel:+48111111111">
+            <span>+48 111 111 111</span>
+          </a>
+        </li>
+        <li class="mobile-contact__element">
+          <a class="link mobile-contact__mail" href="mailto:info@devstudio.com">
+            <span>info@devstudio.com</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- mobile socials  -->
+
+      <ul class="mobile-social">
+        <li class="mobile-social__element">
+          <a class="mobile-social__link" href="https://www.instagram.com/">
+            <span>Instagram</span>
+          </a>
+        </li>
+        <li class="mobile-social__element">
+          <a class="mobile-social__link" href="https://twitter.com/">
+            <span>Twitter</span>
+          </a>
+        </li>
+        <li class="mobile-social__element">
+          <a class="mobile-social__link" href="https://www.facebook.com/">
+            <span>Facebook</span>
+          </a>
+        </li>
+        <li class="mobile-social__element">
+          <a class="mobile-social__link" href="https://www.linkedin.com/">
+            <span>LinkedIn</span>
+          </a>
+        </li>
       </ul>
     </div>
 

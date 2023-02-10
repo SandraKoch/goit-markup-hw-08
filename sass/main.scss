@@ -20,30 +20,23 @@ body {
 //
 
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin: 0;
-  padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
-  border-radius: 50%;
   outline: none;
-}
 
-@media (min-width: 768px) {
-  .menu-toggle {
+  &:hover,
+  &:focus {
+    fill: var(--active-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media (min-width: 768px) {
     display: none;
   }
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .menu-container {
@@ -52,34 +45,101 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
+  padding: 48px 40px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
   z-index: 999;
 
   transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
-}
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.menu-container.is-open {
-  transform: translateX(0);
-}
+  &.is-open {
+    transform: translateX(0);
+  }
 
-.menu-container .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
+  & .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: #fff;
+  }
 }
 
 .mobile-menu {
-  padding: 0;
-  margin: 0;
   list-style: none;
+
+  &__item {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175; /*47px*/
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+
+    &:not(:last-child) {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--primary-color);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--active-color);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 }
 
-.mobile-menu .link {
-  display: block;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
+.mobile-contact {
+  list-style: none;
+
+  &__tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18; /*40px*/
+    letter-spacing: 0.02em;
+    color: var(--active-color);
+    margin-bottom: 32px;
+  }
+
+  &__mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17; /*28px*/
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+    margin-bottom: 64px;
+  }
+}
+
+.mobile-social {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+  &__element {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22; /*22px*/
+    letter-spacing: 0.02em;
+    padding-right: 10px;
+
+    &:not(:first-child) {
+      padding-left: 10px;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--active-color);
+  }
 }
