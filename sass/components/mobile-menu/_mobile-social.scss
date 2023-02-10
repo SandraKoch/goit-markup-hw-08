@@ -1,7 +1,6 @@
 .mobile-social {
   list-style: none;
   display: flex;
-  justify-content: space-between;
 
   @media screen and (min-width: 320px) and (max-width: 403px) {
     flex-wrap: wrap;
@@ -23,19 +22,21 @@
 
     &:not(:last-child) {
       border-right: 1px solid rgba(33, 33, 33, 0.2);
-    }
-
-    @media screen and (min-width: 320px) and (max-width: 403px) {
-      padding-right: 10px;
-
-      &:not(:first-child) {
-        padding-left: 3px;
-      }
-    }
-
-    @media screen and (min-width: 404px) {
       padding-right: 10px;
     }
+
+    // @media screen and (min-width: 320px) and (max-width: 403px) {
+    //   // padding-right: 10px;
+    // }
+    //   &:not(:first-child) {
+    //     // padding-left: 3px;
+    //     // margin-right: 3px;
+    //   }
+    // }
+
+    // @media screen and (min-width: 404px) {
+    //   padding-right: 10px;
+    // }
   }
 
   &__link {
