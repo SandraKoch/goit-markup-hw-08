@@ -2,8 +2,8 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 30px;
+  justify-content: center;
 
   @media screen and (min-width: 1200px) {
     justify-content: space-between;
