@@ -5,8 +5,16 @@
   font-size: 26px;
   line-height: 1.19; /*31px*/
   letter-spacing: 0.03em;
-  /* padding-top: 60px; */
   padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
 
   &__span {
     color: #2196f3;
